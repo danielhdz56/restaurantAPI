@@ -1,0 +1,26 @@
+{
+  "name": "restaurantapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhdz56/restaurantAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielhdz56/restaurantAPI/issues"
+  },
+  "homepage": "https://github.com/danielhdz56/restaurantAPI#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "hbs": "^4.0.1",
+    "mysql": "^2.14.1",
+    "socket.io": "^2.0.3"
+  }
+}

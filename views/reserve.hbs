@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Some Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    {{> header}}
+
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Reservation Page -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Table Reservation</h4>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" id="reserve_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Phone Number</label>
+                                <input type="text" class="form-control" id="reserve_phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" class="form-control" id="reserve_email">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Unique ID</label>
+                                <input type="text" class="form-control" id="reserve_uniqueID">
+                            </div>
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{> footer}}
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/reserve.js"></script>
+</body>
+</html>
